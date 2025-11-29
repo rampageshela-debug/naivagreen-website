@@ -1,0 +1,1264 @@
+/* ============================
+   TEAM SECTION STYLING
+============================ */
+
+.team-section {
+    padding: 80px 0;
+    background: #f7fdf8;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a5e27; /* green brand color */
+}
+
+.team-section p.section-intro {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    color: #4d4d4d;
+}
+
+/* ---- Team Grid ---- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    padding: 0 40px;
+}
+
+/* ---- Team Card ---- */
+.team-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.1);
+}
+
+/* ---- Team Image ---- */
+.team-card img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1a5e27;
+    margin-bottom: 20px;
+}
+
+/* ---- Text ---- */
+.team-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.team-card h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #1a5e27;
+}
+
+.team-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ---- Responsive Fixes ---- */
+@media(max-width: 600px){
+    .team-section h2 {
+        font-size: 28px;
+    }
+}
+<section class="team-section" id="team">
+    <h2>Meet Our Team</h2>
+    <p class="section-intro">
+        Our leadership brings years of horticultural innovation, sustainable farming practices,
+        and agricultural excellence.
+    </p>
+
+    <div class="team-grid">
+
+        <div class="team-card">
+            <img src="images/team1.jpg" alt="CEO">
+            <h3>John Mwangi</h3>
+            <h4>Chief Executive Officer</h4>
+            <p>
+                Over 15 years experience in commercial propagation, greenhouse management,
+                and agribusiness leadership.
+            </p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/team2.jpg" alt="Operations Manager">
+            <h3>Grace Nduta</h3>
+            <h4>Operations Manager</h4>
+            <p>
+                Oversees daily production, quality assurance, and management of our
+                propagation facilities.
+            </p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/team3.jpg" alt="Lead Agronomist">
+            <h3>David Kamau</h3>
+            <h4>Lead Agronomist</h4>
+            <p>
+                Expert in plant tissue culture, soil science, and commercial crop development.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Naiva Green Propagation Limited</title>
+  <!-- Your existing CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS (if not already loaded) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Nav goes here (reuse your existing header) -->
+
+  <section class="products-section" id="products">
+    <h2 data-aos="fade-up">Our Products</h2>
+    <p class="section-intro" data-aos="fade-up" data-aos-delay="100">
+      Browse our high-quality propagation products and seedlings.
+    </p>
+
+    <div class="products-grid">
+      <!-- Example product card - duplicate for each item -->
+      <div class="product-card" data-aos="zoom-in-up" data-aos-delay="200">
+        <img src="images/product1.jpg" alt="Product Name">
+        <h3>Product Name 1</h3>
+        <p class="price">KES 1,200</p>
+        <p class="short-desc">Short description about the product.</p>
+        <a href="product-detail.html" class="btn">View Details</a>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in-up" data-aos-delay="300">
+        <img src="images/product2.jpg" alt="Product Name">
+        <h3>Product Name 2</h3>
+        <p class="price">KES 900</p>
+        <p class="short-desc">Short description about the product.</p>
+        <a href="product-detail.html" class="btn">View Details</a>
+      </div>
+
+      <!-- Add more product cards here -->
+    </div>
+  </section>
+
+  <!-- Footer goes here -->
+
+  <!-- AOS JS (if not already loaded) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+/* ====== PRODUCTS PAGE ====== */
+.products-section {
+  padding: 80px 0;
+  background: #f7fdf8;
+  text-align: center;
+}
+.products-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a5e27;
+}
+.products-section p.section-intro {
+  font-size: 18px;
+  margin: 0 auto 50px;
+  max-width: 650px;
+  color: #4d4d4d;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  padding: 0 40px;
+}
+.product-card {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 35px rgba(0,0,0,0.1);
+}
+.product-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.product-card h3 {
+  font-size: 22px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.product-card .price {
+  font-size: 20px;
+  color: #1a5e27;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.product-card .short-desc {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.product-card .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #1a5e27;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.product-card .btn:hover {
+  background: #154a1f;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .products-section h2 {
+    font-size: 28px;
+  }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Name | Naiva Green</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Nav -->
+
+  <section class="product-detail" id="product-detail">
+    <div class="container">
+      <div class="product-images" data-aos="fade-right">
+        <img src="images/product1.jpg" alt="Product Name">
+        <!-- optional extra images or gallery -->
+      </div>
+
+      <div class="product-info" data-aos="fade-left" data-aos-delay="200">
+        <h2>Product Name</h2>
+        <p class="price">KES 1,200</p>
+        <p class="long-desc">
+          Detailed description about product, benefits, usage, propagation notes,
+          quality, availability, and any other essential info customers need.
+        </p>
+        <a href="contact.html" class="btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+/* ====== PRODUCT DETAIL PAGE ====== */
+.product-detail {
+  padding: 80px 0;
+  background: #fff;
+}
+.product-detail .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  align-items: start;
+  padding: 0 40px;
+}
+.product-detail img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+  object-fit: cover;
+}
+.product-detail h2 {
+  font-size: 32px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+.product-detail .price {
+  font-size: 24px;
+  color: #1a5e27;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.product-detail .long-desc {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+.product-detail .btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #1a5e27;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.product-detail .btn:hover {
+  background: #154a1f;
+}
+
+@media(max-width: 700px){
+  .product-detail .container {
+    padding: 0 20px;
+  }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naiva Green Propagation Ltd</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f8f2;
+            color: #2b3a2b;
+        }
+        header {
+            background: #2e7d32;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        nav {
+            background: #1b5e20;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+            color: white;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .footer {
+            background: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        /* Team Section Animation */
+    .team-member {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s ease forwards;
+    }
+
+    .team-member:nth-child(1) { animation-delay: 0.2s; }
+    .team-member:nth-child(2) { animation-delay: 0.4s; }
+    .team-member:nth-child(3) { animation-delay: 0.6s; }
+    .team-member:nth-child(4) { animation-delay: 0.8s; }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            color: #2e7d32;
+        }
+        .product-card p {
+            color: #4d4d4d;
+        }
+</style>
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Naiva Green Propagation Limited</h1>
+        <p>Growing Nature, Growing the Future</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Sustainable Plant Propagation & Eco Solutions</h2>
+        <p>Innovation • Sustainability • Green Future</p>
+    </section>
+
+    <section id="about" data-aos="fade-up" class="section">
+        <h2>About Us</h2>
+        <p>
+            <strong>Naiva Green Propagation Limited</strong> is a Kenyan company committed to advancing sustainable plant propagation, nursery management, and eco-friendly agricultural practices. Founded by a team of horticulture experts and conservationists, we aim to supply healthy, high-quality seedlings to farmers, landscapers, and reforestation projects across East Africa and beyond.
+        </p>
+
+        <h3>Our Story</h3>
+        <p>
+            What began as a small community nursery has grown into a full-service propagation company. Over the years we've developed scalable propagation protocols, partnered with research institutions, and helped local farmers increase yields through improved plant material and training.
+        </p>
+
+        <h3>Mission</h3>
+        <p>
+            To provide sustainable, high-quality plant propagation services and support ecological restoration through responsible nursery practices and community education.
+        </p>
+
+        <h3>Vision</h3>
+        <p>
+            A greener future where resilient plant stock and sustainable farming practices enable communities to thrive while restoring natural landscapes.
+        </p>
+
+        <h3>Core Values</h3>
+        <ul>
+            <li><strong>Sustainability:</strong> We prioritise environmentally responsible methods in every stage of production.</li>
+            <li><strong>Quality:</strong> Healthy stock and traceable processes ensure consistent germination and growth.</li>
+            <li><strong>Community:</strong> We train and support local growers and nurseries with knowledge transfer and fair access to planting material.</li>
+            <li><strong>Innovation:</strong> We adopt modern techniques and partner with research institutions to improve outcomes.</li>
+        </ul>
+
+        <h3>What We Do</h3>
+        <p>
+            We specialise in seedling propagation, vegetative propagation (cuttings, grafting), greenhouse management, soil & substrate formulation, and post-sale advisory for planting and maintenance. Our clients range from smallholder farmers to commercial landscapers and government restoration projects.
+        </p>
+
+        <h3>Our Team</h3>
+        <p>
+            Our multidisciplinary team includes horticulturists, agronomists, nursery managers and technical staff with hands-on nursery experience. We combine traditional knowledge with modern nursery technology to produce robust plant material.
+        </p>
+
+        <h3>Sustainability & Certification</h3>
+        <p>
+            We follow strict nursery hygiene, integrated pest management (IPM), and organic-friendly practices. Naiva Green is committed to sustainable sourcing, minimizing chemical inputs, and maintaining traceability for each batch of plant material we produce.
+        </p>
+
+        <h3>Get Involved</h3>
+        <p>
+            Whether you need seedlings for planting, technical training for your nursery, or would like to partner on a restoration project, we welcome collaborations. <a href="#contact">Contact us</a> to learn how we can work together.
+        </p>
+    </section>
+
+    <section id="services" data-aos="fade-left" class="section">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Seedling and plant propagation</li>
+            <li>Greenhouse management solutions</li>
+            <li>Organic farming support</li>
+            <li>Large‑scale environmental planting projects</li>
+        </ul>
+    </section>
+
+    <section id="contact" data-aos="fade-right" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: info@naivagreenpropagation.com</p>
+        <p>Phone: +254729526 873</p>
+        <p>Location: Naivasha / Kenya / East Africa</p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Naiva Green Propagation Limited. All Rights Reserved.</p>
+    </footer>
+
+    <section id="products" data-aos="fade-up" class="section">
+        <h2>Our Products</h2>
+        <p>High‑quality seedlings and plant material grown under sustainable nursery management.</p>
+
+        <div class="product-grid">
+            <!-- 20 Product Cards -->
+            <div class="product-card" data-aos="zoom-in">
+                <a href="product-01.html"><img src="images/product01.jpg" alt="Mango Seedlings"></a>
+                <h3>Mango Seedlings</h3>
+                <p>High-yield grafted mango seedlings — fast establishment, ideal for orchards.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="50">
+                <a href="product-02.html"><img src="images/product02.jpg" alt="Avocado Seedlings"></a>
+                <h3>Avocado Seedlings</h3>
+                <p>Vigorous avocado grafts for commercial and backyard production.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+                <a href="product-03.html"><img src="images/product03.jpg" alt="Citrus (Lemon) Seedlings"></a>
+                <h3>Citrus (Lemon) Seedlings</h3>
+                <p>Certified lemon seedlings with consistent fruit quality and disease resistance.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="150">
+                <a href="product-04.html"><img src="images/product04.jpg" alt="Macadamia Seedlings"></a>
+                <h3>Macadamia Seedlings</h3>
+                <p>Nursery-grown macadamia stock selected for yield and kernel quality.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+                <a href="product-05.html"><img src="images/product05.jpg" alt="Grevillea Seedlings"></a>
+                <h3>Grevillea robusta Seedlings</h3>
+                <p>Fast-growing shade and timber seedlings, excellent for agroforestry.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="250">
+                <a href="product-06.html"><img src="images/product06.jpg" alt="Cordia africana Seedlings"></a>
+                <h3>Cordia africana Seedlings</h3>
+                <p>Indigenous timber species for restoration and commercial planting.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+                <a href="product-07.html"><img src="images/product07.jpg" alt="Acacia Seedlings"></a>
+                <h3>Acacia Seedlings</h3>
+                <p>Hardy nitrogen-fixing seedlings suited for degraded land restoration.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="350">
+                <a href="product-08.html"><img src="images/product08.jpg" alt="Indigenous Tree Mix"></a>
+                <h3>Indigenous Tree Seedling Mix</h3>
+                <p>Mixed native seedlings tailored for ecological restoration projects.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+                <a href="product-09.html"><img src="images/product09.jpg" alt="Tomato Seedlings"></a>
+                <h3>Tomato Seedlings</h3>
+                <p>Uniform, disease-screened tomato starts for greenhouse or open-field.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="450">
+                <a href="product-10.html"><img src="images/product10.jpg" alt="Capsicum (Bell Pepper) Seedlings"></a>
+                <h3>Capsicum (Bell Pepper) Seedlings</h3>
+                <p>Strong pepper transplants with excellent fruit set.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="500">
+                <a href="product-11.html"><img src="images/product11.jpg" alt="Eggplant Seedlings"></a>
+                <h3>Eggplant Seedlings</h3>
+                <p>Vigorous eggplant seedlings for high-yield production.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="550">
+                <a href="product-12.html"><img src="images/product12.jpg" alt="Kale Seedlings"></a>
+                <h3>Kale Seedlings</h3>
+                <p>Nutritious leafy vegetable seedlings ideal for market gardening.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="600">
+                <a href="product-13.html"><img src="images/product13.jpg" alt="Lettuce Seedlings"></a>
+                <h3>Lettuce Seedlings</h3>
+                <p>Uniform lettuce starts for quick harvest cycles.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="650">
+                <a href="product-14.html"><img src="images/product14.jpg" alt="Basil Seedlings"></a>
+                <h3>Basil Seedlings</h3>
+                <p>Herb seedlings for culinary and commercial herb production.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="700">
+                <a href="product-15.html"><img src="images/product15.jpg" alt="Rosemary Seedlings"></a>
+                <h3>Rosemary Seedlings</h3>
+                <p>Woody herb seedlings for landscaping and culinary use.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="750">
+                <a href="product-16.html"><img src="images/product16.jpg" alt="Moringa Seedlings"></a>
+                <h3>Moringa oleifera Seedlings</h3>
+                <p>Fast-growing, nutrient-rich moringa seedlings for food and agroforestry.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="800">
+                <a href="product-17.html"><img src="images/product17.jpg" alt="Napier Grass Slips"></a>
+                <h3>Napier Grass Slips</h3>
+                <p>High-biomass grass slips for fodder and erosion control.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="850">
+                <a href="product-18.html"><img src="images/product18.jpg" alt="Lavender Seedlings"></a>
+                <h3>Lavender Seedlings</h3>
+                <p>Fragrant lavender seedlings ideal for aromatherapy and landscaping.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="900">
+                <a href="product-19.html"><img src="images/product19.jpg" alt="Hibiscus (Ornamental)"></a>
+                <h3>Hibiscus (Ornamental)</h3>
+                <p>Colorful hibiscus plants for ornamental planting and hedges.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="950">
+                <a href="product-20.html"><img src="images/product20.jpg" alt="Ficus benjamina (Indoor)"></a>
+                <h3>Ficus benjamina (Indoor)</h3>
+                <p>Elegant indoor ficus plants suitable for offices and homes.</p>
+            </div>
+
+        </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Indigenous Tree Seedlings</h3>
+                <p>Ideal for reforestation, conservation, and landscape restoration.</p>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Vegetable Seedlings</h3>
+                <p>Strong, uniform vegetable seedlings for farmers and greenhouse growers.</p>
+            </div>
+        </div>
+    </section>
+    <section id="team" data-aos="zoom-in-up" class="section">
+        <h2>Our Team</h2>
+        <p>Meet the dedicated professionals behind Naiva Green Propagation Limited.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="Team Member 1">
+                <h3>Ruben Too </h3>
+                <p>Head of Horticulture</p>
+                <p>Specialist in plant propagation, nursery management, and greenhouse systems.</p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- AOS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+</body>
+</html>
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1b5e20;
+  color: #fff;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* MOBILE NAV MENU */
+nav .menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Hidden menu for mobile */
+nav ul.mobile {
+  display: none;
+  flex-direction: column;
+  background: #1b5e20;
+  width: 100%;
+  padding: 10px;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('hero.jpg') center/cover no-repeat;
+  color: white;
+}
+
+/* ========== PRODUCT GRID ========== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ========== TEAM SECTION ========== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1b5e20;
+  color: white;
+}
+
+/* ==========================================
+   RESPONSIVE BREAKPOINTS 
+   ========================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav ul.mobile {
+    display: flex;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero {
+    padding: 40px 20px;
+    font-size: 16px;
+  }
+}
+<script>
+  const menuIcon = document.querySelector(".menu-icon");
+  const mobileMenu = document.querySelector("nav ul.mobile");
+
+  menuIcon.onclick = () => {
+    mobileMenu.style.display =
+      mobileMenu.style.display === "flex" ? "none" : "flex";
+  };
+</script>
+<nav>
+  <div class="logo">Naiva Green Propagation Ltd</div>
+
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="menu-icon">☰</div>
+
+  <ul class="mobile">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<button id="darkModeToggle" class="dark-toggle">🌙 Dark Mode</button>
+/* ----------------------------- */
+/* Dark Mode Base Styles         */
+/* ----------------------------- */
+body.dark-mode {
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+/* Containers and Cards */
+.dark-mode .card,
+.dark-mode .team-member,
+.dark-mode .product-card {
+    background: #161b22;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+/* Navigation */
+.dark-mode nav {
+    background: #161b22;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.05);
+}
+
+.dark-mode nav a {
+    color: #e6edf3;
+}
+
+.dark-mode nav a:hover {
+    color: #58a6ff;
+}
+
+/* Buttons */
+.dark-mode button,
+.dark-mode .btn {
+    background: #21262d;
+    color: #e6edf3;
+    border: 1px solid #30363d;
+}
+
+.dark-mode button:hover,
+.dark-mode .btn:hover {
+    background: #30363d;
+}
+
+/* Page Sections */
+.dark-mode section {
+    background: #0d1117;
+}
+
+/* Dark Mode Toggle Button */
+.dark-toggle {
+    background: transparent;
+    border: 1px solid #30363d;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #0d1117;
+    font-weight: bold;
+}
+
+body.dark-mode .dark-toggle {
+    color: #e6edf3;
+    border-color: #58a6ff;
+}
+// Dark Mode Toggle
+const toggleBtn = document.getElementById("darkModeToggle");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Save preference
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+});
+
+// Load saved theme
+window.onload = () => {
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+    }
+};
+<button id="darkModeToggle" class="dark-toggle">
+    <span class="icon">🌙</span>
+</button>
+/* Smooth fade animation */
+* {
+    transition: background-color 0.35s ease, 
+                color 0.35s ease,
+                border-color 0.35s ease;
+}
+
+/* Dark Mode Toggle Button */
+.dark-toggle {
+    background: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 10px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark mode button style */
+body.dark-mode .dark-toggle {
+    background: #1f2937;
+    border-color: #58a6ff;
+}
+
+/* Animate icon rotation */
+.dark-toggle .icon {
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+body.dark-mode .dark-toggle .icon {
+    transform: rotate(180deg);
+}
+
+/* Button hover animation */
+.dark-toggle:hover {
+    transform: scale(1.08);
+}
+const toggleBtn = document.getElementById("darkModeToggle");
+const icon = toggleBtn.querySelector(".icon");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Switch icon smoothly
+    if (document.body.classList.contains("dark-mode")) {
+        icon.textContent = "☀️";
+    } else {
+        icon.textContent = "🌙";
+    }
+
+    // Save preference
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+});
+
+// Load saved theme
+window.onload = () => {
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        icon.textContent = "☀️";
+    }
+};
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" id="darkModeToggle">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+</div>
+/* Smooth Fade Animation */
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Wrapper */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* The Switch */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 28px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* Handle */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Checked (Dark Mode Active) */
+input:checked + .slider {
+    background-color: #4f9cff;
+    box-shadow: 0 0 10px #4f9cff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dark Mode Colors */
+body.dark-mode {
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+body.dark-mode a {
+    color: #58a6ff;
+}
+
+body.dark-mode .card,
+body.dark-mode .product-card,
+body.dark-mode .team-member {
+    background: #161b22;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+body.dark-mode nav {
+    background: #161b22;
+}
+
+/* Glow effect */
+body.dark-mode .slider {
+    background: #4f9cff;
+    box-shadow: 0 0 15px #4f9cff;
+}
+const toggleSwitch = document.querySelector('.theme-switch input');
+
+// Toggle Function
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme);
+
+// Load saved preference
+window.onload = () => {
+    const darkMode = localStorage.getItem('darkMode');
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (darkMode === "enabled" || (darkMode === null && systemPrefersDark)) {
+        document.body.classList.add('dark-mode');
+        toggleSwitch.checked = true;
+    }
+};
+<div class="theme-switch-wrapper">
+    <label class="theme-switch" id="darkModeToggle">
+        <input type="checkbox">
+        <span class="slider round">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+        </span>
+    </label>
+</div>
+/* Icon styling */
+.slider .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Sun icon (left) */
+.slider .sun {
+    left: 6px;
+    opacity: 1;
+}
+
+/* Moon icon (right) */
+.slider .moon {
+    right: 6px;
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+}
+
+/* When dark mode is active */
+body.dark-mode .slider .sun {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8);
+}
+
+body.dark-mode .slider .moon {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+const toggleSwitch = document.querySelector('.theme-switch input');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+}
+
+toggleSwitch.addEventListener('change', switchTheme);
+
+// Load preference + icon state
+window.onload = () => {
+    const darkMode = localStorage.getItem('darkMode');
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (darkMode === "enabled" || (darkMode === null && systemPrefersDark)) {
+        document.body.classList.add('dark-mode');
+        toggleSwitch.checked = true;
+    }
+};
+/* Rotation animation for icons */
+@keyframes rotateOut {
+    0% { transform: translateY(-50%) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translateY(-50%) rotate(180deg) scale(0.4); opacity: 0; }
+}
+
+@keyframes rotateIn {
+    0% { transform: translateY(-50%) rotate(-180deg) scale(0.4); opacity: 0; }
+    100% { transform: translateY(-50%) rotate(0deg) scale(1); opacity: 1; }
+}
+
+/* Base state */
+.slider .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: opacity 0.4s ease;
+}
+
+/* Initial Positions */
+.slider .sun { left: 6px; }
+.slider .moon { right: 6px; opacity: 0; transform: translateY(-50%) scale(0.8); }
+
+/* Light Mode → Sun visible */
+body:not(.dark-mode) .sun {
+    animation: rotateIn 0.5s forwards;
+}
+body:not(.dark-mode) .moon {
+    animation: rotateOut 0.5s forwards;
+}
+
+/* Dark Mode → Moon visible */
+body.dark-mode .sun {
+    animation: rotateOut 0.5s forwards;
+}
+body.dark-mode .moon {
+    animation: rotateIn 0.5s forwards;
+}
+index.html
+images/
+product-01.html … product-20.html
+(any CSS files if you separated them)
+scripts if any
