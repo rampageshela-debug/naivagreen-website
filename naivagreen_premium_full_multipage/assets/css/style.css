@@ -1,0 +1,13 @@
+/* minimal css for premium theme */
+:root{--primary:#0f3f25;--accent:#c79b34;--bg:#f7fbf6;--card:#fff}
+body{margin:0;font-family:Arial;background:var(--bg);color:#0f2b1a}
+.header{padding:18px;background:var(--primary);color:#fff;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{width:56px;height:56px}
+.nav{display:flex;gap:12px}
+.container{max-width:1100px;margin:28px auto;padding:0 18px}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.product-card{background:var(--card);padding:12px;border-radius:12px;text-align:center}
+.footer{padding:20px;background:var(--primary);color:#fff;text-align:center}
+@media(max-width:900px){.product-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.product-grid{grid-template-columns:1fr}.nav{display:none}}
